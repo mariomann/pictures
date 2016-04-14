@@ -273,11 +273,6 @@
                     "type": "integer",
                     "description": "Label-ID"
                 },
-                "dateValue": {
-                    "type": "integer",
-                    "format": "int64",
-                    "description": "TODO"
-                },
                 "storageLabelType": {
                     "type": "object",
                     "properties": {
@@ -308,17 +303,22 @@
                         "groupingEnabled": {
                             "type": "boolean",
                             "description": "TODO"
-                        },
-                        "value": {
-                            "type": "integer",
-                            "format": "int64",
-                            "description": "TODO"
-                        },
-                        "formatedValue": {
-                            "type": "string",
-                            "description": "human readable date value. For example \"Feb 14, 2016\""
                         }
                     }
+                },
+                "dateValue": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "TODO"
+                },
+                "value": {
+                    "type": "integer",
+                    "format": "int64",
+                    "description": "TODO"
+                },
+                "formatedValue": {
+                    "type": "string",
+                    "description": "human readable date value. For example \"Feb 14, 2016\""
                 }
             }
         }
