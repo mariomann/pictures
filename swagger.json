@@ -280,14 +280,6 @@
                             "type": "integer",
                             "description": "Storage-Label-Type-ID"
                         },
-                        "onePerStorage": {
-                            "type": "boolean",
-                            "description": "TODO"
-                        },
-                        "editable": {
-                            "type": "boolean",
-                            "description": "Description if Storage-Label is editable."
-                        },
                         "valueReusable": {
                             "type": "boolean",
                             "description": "TODO"
@@ -296,9 +288,17 @@
                             "type": "boolean",
                             "description": "TODO"
                         },
+                        "onePerStorage": {
+                            "type": "boolean",
+                            "description": "TODO"
+                        },
                         "valueClass": {
                             "type": "string",
                             "description": "For example java.util.Date"
+                        },
+                        "editable": {
+                            "type": "boolean",
+                            "description": "Description if Storage-Label is editable."
                         },
                         "groupingEnabled": {
                             "type": "boolean",
