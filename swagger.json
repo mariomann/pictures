@@ -279,52 +279,46 @@
                     "description": "TODO"
                 },
                 "storageLabelType": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/storageLabelType"
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "description": "Storage-Label-Type-ID"
+                        },
+                        "onePerStorage": {
+                            "type": "boolean",
+                            "description": "TODO"
+                        },
+                        "editable": {
+                            "type": "boolean",
+                            "description": "Description if Storage-Label is editable."
+                        },
+                        "valueReusable": {
+                            "type": "boolean",
+                            "description": "TODO"
+                        },
+                        "multiType": {
+                            "type": "boolean",
+                            "description": "TODO"
+                        },
+                        "valueClass": {
+                            "type": "string",
+                            "description": "For example java.util.Date"
+                        },
+                        "groupingEnabled": {
+                            "type": "boolean",
+                            "description": "TODO"
+                        },
+                        "value": {
+                            "type": "integer",
+                            "format": "int64",
+                            "description": "TODO"
+                        },
+                        "formatedValue": {
+                            "type": "string",
+                            "description": "human readable date value. For example \"Feb 14, 2016\""
+                        }
                     }
-                },
-                "value": {
-                    "type": "integer",
-                    "format": "int64",
-                    "description": "TODO"
-                },
-                "formatedValue": {
-                    "type": "string",
-                    "description": "human readable date value. For example \"Feb 14, 2016\""
-                }
-            }
-        },
-        "storageLabelType": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "integer",
-                    "description": "Storage-Label-Type-ID"
-                },
-                "onePerStorage": {
-                    "type": "boolean",
-                    "description": "TODO"
-                },
-                "editable": {
-                    "type": "boolean",
-                    "description": "Description if Storage-Label is editable."
-                },
-                "valueReusable": {
-                    "type": "boolean",
-                    "description": "TODO"
-                },
-                "multiType": {
-                    "type": "boolean",
-                    "description": "TODO"
-                },
-                "valueClass": {
-                    "type": "string",
-                    "description": "For example java.util.Date"
-                },
-                "groupingEnabled": {
-                    "type": "boolean",
-                    "description": "TODO"
                 }
             }
         }
